@@ -9,11 +9,12 @@
 </head>
 <body>
     <h2>
-        Merci <?= $_GET['firstname']; ?> <?= $_GET['lastname']; ?> de nous avoir contacté à propos de <?= $_GET['subject']; ?>.
+        Merci <?= $_POST['firstname']; ?> <?= $_POST['lastname']; ?> de nous avoir contacté à propos de <?= $_POST['subject']; ?>.
     </h2>
     <p>
-        Un de nos conseiller vous contactera soit à l’adresse <?= $_GET['email'];?> ou par téléphone au <?= $_GET['phone'];?> dans les plus brefs délais pour traiter votre demande :
-        <br><?= $_GET['msg']; ?>
+        Un de nos conseiller vous contactera soit à l’adresse <?= $_POST['email'];?> ou par téléphone au <?= $_POST['phone'];?> dans les plus brefs délais pour traiter votre demande :
+        <br><?= $_POST['msg']; ?>
     </p>
 </body>
 </html>
+
